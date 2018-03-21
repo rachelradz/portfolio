@@ -8,12 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Raleway|Shrikhand" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>    
     <style>
         body {
             margin: 0;
             background:#222;
             font-family: 'Work Sans', sans-serif;
             font-weight: 400;
+            color: lightgrey;
         }
         .container {
             width: 80%;
@@ -21,11 +23,21 @@
         }
         header {
             background: pink;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Shrikhand', cursive;
+            font-family: 'Lobster Two', cursive;
+        }
+        footer {
+            background: pink;
+            padding: .5%;
+            float: right;
+            margin-left: 70px;
         }
         header::after {
             content: '':
             display: table;
             clear: both;
+            padding: 0;
         }
         nav {
             float: right;
@@ -40,16 +52,16 @@
         nav li {
             display: inline-block;
             margin-left: 70px;
-            padding-top: 20px;
+            padding-top: px;
         }
         nav a {
             color: #444;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 14px;
+            font-size: 20px;
         }
         nav a:hover {
-            color: #000;
+            color: #444;
         }
         nav a::before {
             content: '';
@@ -64,7 +76,7 @@
         }
     
         nav a:hover::before {
-            width: 15%;
+            width: 20%;
         }
       
         .border {
@@ -72,7 +84,7 @@
             border-color: lightgrey;
             border-width: 10px;
         }
-        p {
+    p {
         font: 15px arial, sans-serif;
     }
     p {
@@ -84,6 +96,18 @@
         font-family: 'Raleway', sans-serif;
         font-family: 'Shrikhand', cursive;
         font-family: 'Lobster Two', cursive;
+     }
+
+    label {
+     display: inline-block;
+     width: 90px;
+     text-align: right;
+    }
+    input, textarea {
+        width: 300px;
+        box-sizing:border-box;
+        border: 1px solid #999;
+
     }
     .port-row {
         color:lightgrey;
@@ -106,36 +130,19 @@
         border-width: 2px;
         border-style: solid;
         border-radius: 10px;
-    
-        input[type=text] {
-            border: 2px solid pink;
-            border-radius: 4px;
-        }
-    
-        .submission-form {
-            max-width:500px;
-            margin:2rem auto;
-            border:2px solid pink;
-            padding:2rem;
-            label{
-                display:block;
-            }
-            input, textarea{
-                display:block;
-            }
-    
+
      
-    
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-        <nav>             
+        <h2><font color="#444"><strong>Rachel's Travel Blog</strong><i class="fa fa-plane"></font></i></h2>
+        <nav>    
             <ul>
-                <li><a href="#"><strong>Home</strong></a></li>  
-                <li><a href="#"><strong>Travel</strong></a></li>
-                <li><a href="#"><strong>Contact</strong></a></li>
+                <li><a href="#aboutme"><strong>Home</strong></a></li>  
+                <li><a href="#travel"><strong>Travel</strong></a></li>
+                <li><a href="#contact"><strong>Contact</strong></a></li>
             </ul>
         </nav>
         </div>
@@ -143,7 +150,8 @@
     </header>
     <div class="container">
         <div class="text-center">
-    <h1><font color="lightgrey">About Me</font></h1>
+        <br>
+    <h1 id="aboutme">About Me</h1>
     </div>
     <div class="text-center">
         <div class="border">
@@ -154,7 +162,7 @@
     </div>
     <br><br>
     <div class="text-center">
-    <h1><font color="lightgrey">Portfolio</font></h1>
+    <h1 id="travel">Travel Wishlist</h1>
     </div>
     <div class="row port-row">
             <div class="column">
@@ -170,56 +178,70 @@
                     <p>    Rome</p>
             </div>
     </div>
-    <div class="row">
+    <div class="row port-row">
         <div class="column">
-                <font color="lightgrey">
               <img class="thin-pink-border" src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/18527524_10211635910347836_4402344947805670066_n.jpg?oh=c4608d3b4e9cda6076548635eb61d634&oe=5B36331A" alt="South Africa" style="width:340px;height:220px;">
               <p>    Barcelona</p>
-              <img class ="thin-pink-border" src="http://www.dreamsresorts.com/content/dam/amr/dreamsresorts/resorts/las-mareas/top-slider/cosa17-top-slider.jpg" alt="Costa Rica" style="width:340px;height:220px;"
-              <p>    Costa Rica</p>
+              </div>
+              <div class="column">
+              <img class ="thin-pink-border" src="http://www.dreamsresorts.com/content/dam/amr/dreamsresorts/resorts/las-mareas/top-slider/cosa17-top-slider.jpg" alt="Costa Rica" style="width:340px;height:220px;">
+              <p>Costa Rica</p>
+              </div>
+              <div class="column">
               <img class="thin-pink-border" src="https://www.blacktomato.com/wp-content/uploads/2017/02/Phuket-Thailand_196936655.jpg" alt="Thailand" style="width:340px;height:220px;">
               <p>    Thailand</p>
+              </div>
             </div>
+            <div class="row port-row">
             <div class="column">
-                    <font color="lightgrey">
                   <img class="thin-pink-border" src="https://image.ibb.co/imfs0H/Montreal.png" alt="Montreal" " alt="South Africa" style="width:340px;height:220px;">
                   <p>    Montreal</p>
+            </div>
+            <div class="column">
                   <img class="thin-pink-border" src="https://www.thegef.org/sites/default/files/Brazil%2025.jpg" alt="Brazil" style="width:340px;height:220px;">
                   <p>    Brazil</p>
+                  </div>
+            <div class="column">
                   <img class="thin-pink-border" src="https://i.ytimg.com/vi/kxiyD0MQBas/maxresdefault.jpg" alt="France" style="width:340px;height:220px;">
                   <p>    France</p>
+                </div>
                 </div>
         </font>
         </div>
       </div>
       <div class="text-center">
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <div class="form-style-6">
-            <h1>Contact Me</h1>
-            <form class="submission-form">
-            <label for="first-name">
-                First Name
-            </label>
-            <input type="text" id="first-name"><br>
-
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name"><br>
-
-            <label for="email">Email</label>
-            <input type="email" id="email"><br>
-            
-            <label for="phone">Telephone</label>
-            <input type="tel" id="phone"><br>
-
-            <label for="message">Message
-            </label>
-            <textarea id="message"></textarea><br>
-
-            <input type="submit" value="Send">
+      <br><br>
+      <div>
+            <h1 id="contact">Contact Me</h1>
+    <form >
+            <form method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+                <div>
+                        <label for="telephone">Phone:</label>
+                        <input type="telephone" id="telephone" name="user_telephone">
+                    </div>
+                <div>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <div class="button">
+                        <button type="submit">Submit</button>
+                      </div>
+            </form>
         </form>
             </div>
       </div>
 </div>
 </body>
-
+<footer>
+    <a href="https://www.facebook.com/rachel.radziewicz.7"> <i class="fa fa-facebook-square fa-2x"></i></a>
+    <a href="https://www.instagram.com/rachel_radz/"><i class="fa fa-instagram fa-2x"></i></a>
+</footer>
 
